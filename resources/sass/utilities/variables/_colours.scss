@@ -1,0 +1,20 @@
+// Main Colors
+$color--primary: #343a40;
+$color--secondary: #f26a25;
+
+// Colors
+$color--white: #fff !default;
+$color--grey: #999 !default;
+$color--grey-dark: rgb(109, 108, 108) !default;
+$color--black: #000 !default;
+
+//
+$color--mainBorder: rgba($color--black, 0.1);
+$color--text: rgba($color--black, 0.5);
+
+// Social color
+$color--facebook: #3b5998 !default;
+$color--instagram: #e4405f !default;
+$color--linkedin: #0073b1 !default;
+
+$color--overlay: rgba($color--black, 0.8);

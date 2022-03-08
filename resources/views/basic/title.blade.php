@@ -1,0 +1,2 @@
+{!! SEOMeta::generate() !!}
+{!! OpenGraph::generate() !!}

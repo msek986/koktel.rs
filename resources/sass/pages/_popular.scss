@@ -1,0 +1,147 @@
+.popular-section {
+    margin-top: 80px;
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 32px;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        padding-left: 0;
+    }
+
+    @media only screen and (max-width: 700px) {
+        margin-top: 70px;
+    }
+}
+
+.popular-cocktail {
+    &-container {
+        margin-bottom: 15px;
+        padding: 30px 30px 40px 30px;
+        transition: all 0.3s;
+
+        &:nth-child(odd) {
+            background: rgb(252, 252, 252);
+        }
+        &:nth-child(even) {
+            background: rgb(247, 247, 247);
+        }
+
+        @media only screen and (max-width: 600px) {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        display: inline-block;
+        font-weight: bold;
+        border-bottom: 2px solid $color--secondary;
+        font-size: 26px;
+
+        @media only screen and (max-width: 600px) {
+            margin: 20px 0 0 20px;
+        }
+    }
+
+    &__history {
+        @media only screen and (max-width: 600px) {
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 15px 20px;
+        box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.5);
+
+        @media only screen and (max-width: 900px) {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: 600px) {
+            align-items: center;
+        }
+
+        &-image {
+            margin: auto;
+        }
+
+        &-image img {
+            height: 300px;
+            width: 300px;
+            padding-right: 40px;
+            object-fit: cover;
+
+            @media only screen and (max-width: 900px) {
+                padding-right: 0;
+            }
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-details {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        &-ingredients {
+            padding-bottom: 15px;
+            text-align: left;
+
+            @media only screen and (max-width: 900px) {
+                padding-top: 15px;
+            }
+
+            &-title {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            &-list {
+                margin-right: 20px;
+                font-size: 16px;
+
+                @media only screen and (max-width: 700px) {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        &-preparation {
+            &-title {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            &-lead {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__history {
+        &-title {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        &-lead {
+            padding-bottom: 25px;
+            font-size: 16px;
+        }
+    }
+}

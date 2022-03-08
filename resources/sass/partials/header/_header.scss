@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    letter-spacing: 0.8px;
+    z-index: 555;
+    transition: all 0.5s;
+
+    &--open {
+        background: $color--white !important;
+        color: $color--black;
+        transition: background 0.5s;
+    }
+
+    &--white {
+        background: $color--white;
+        color: $color--black;
+    }
+
+    &:hover {
+        background: $color--white;
+        @media only screen and (max-width: 700px) {
+            background: transparent;
+        }
+
+        .header__link {
+            color: $color--black;
+
+            &:hover {
+                color: $color--secondary;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    @media only screen and (max-width: 700px) {
+        padding: 0 !important;
+        background: transparent;
+        transition: background 0.5s;
+    }
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        z-index: 15;
+
+        @media only screen and (max-width: 1250px) {
+            padding: 10px 30px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            padding: 10px 20px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+
+        &-image {
+            width: 50px;
+            height: auto;
+
+            @media only screen and (max-width: 700px) {
+                width: 40px;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        @media only screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        margin-left: 20px;
+        color: $color--white;
+        list-style: none;
+
+        @media only screen and (max-width: 700px) {
+            margin-left: 0;
+            color: $color--black;
+        }
+    }
+
+    &__link {
+        color: $color--white;
+        font-size: 16px;
+        z-index: 999;
+
+        @media only screen and (max-width: 700px) {
+            color: $color--black;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $color--secondary;
+        }
+
+        &--black {
+            color: $color--black;
+            font-size: 16px;
+            z-index: 999;
+
+            &:hover {
+                text-decoration: none;
+                color: $color--secondary;
+            }
+        }
+    }
+}
+
+// navbar hover and scroll colour
+
+.background {
+    background: $color--white !important;
+
+    .header__link {
+        color: $color--black;
+    }
+}
